@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+<nav class="bg-white p-4 shadow-md flex justify-between items-center">
+    <div class="flex space-x-4">
+        <a href="#" class="text-lg">Buy</a>
+        <a href="upload_property.php" class="text-lg">Sell</a> <!-- Updated "Sell" button -->
+        <a href="about.html" class="text-lg">Services</a>
+    </div>
+    <div class="flex justify-center">
+        <a href="index.html">
+            <img src="assets/proty222.png" alt="Logo" class="h-12"> <!-- Logo size increased here -->
+        </a>
+    </div>
+    <div>
+        <a href="#" class="text-lg">Manage Rentals</a>
+        <a href="#" class="ml-4 text-lg">Sign In</a>
+    </div>
+  </nav>
+  
+   <!-- Search Section -->
+   <section class="bg-white mt-6 p-6 shadow-md rounded-md max-w-4xl mx-auto">
+       <form action="process_form.php" method="POST">
+           <div class="flex justify-center space-x-4">
+               <button class="py-2 px-4 font-semibold bg-blue-500 text-white rounded-md" type="button">Buy</button>
+               <button class="py-2 px-4 font-semibold" type="button">Rent</button>
+               <button class="py-2 px-4 font-semibold" type="button">PG</button>
+               <button class="py-2 px-4 font-semibold" type="button">Plot</button>
+               <button class="py-2 px-4 font-semibold" type="button">Commercial</button>
+           </div>
+
+           <div class="mt-6">
+               <input name="search" type="text" placeholder="Search Properties" class="w-full p-4 border border-gray-300 rounded-md" />
+           </div>
+
+           <div class="flex space-x-4 mt-4">
+               <input name="location" type="text" placeholder="Your Location" class="w-1/3 p-4 border border-gray-300 rounded-md" />
+               <input name="property_type" type="text" placeholder="Property Type" class="w-1/3 p-4 border border-gray-300 rounded-md" />
+               <input name="budget" type="text" placeholder="Budget" class="w-1/3 p-4 border border-gray-300 rounded-md" />
+           </div>
+
+           <div class="mt-6 text-center">
+               <button type="submit" class="bg-blue-500 text-white py-3 px-12 rounded-md">Find Property</button>
+           </div>
+       </form>
+   </section>
+
+
+   
+
+   <!-- Stats Section -->
+   <section class="mt-6 max-w-5xl mx-auto grid grid-cols-3 gap-6">
+       <div class="bg-orange-100 p-6 text-center rounded-md">
+           <h2 class="text-2xl font-semibold">2k+</h2>
+           <p>New Flat Listed</p>
+           <a href="#" class="text-blue-500 font-semibold">View all</a>
+       </div>
+       <div class="bg-blue-100 p-6 text-center rounded-md">
+           <h2 class="text-2xl font-semibold">2k+</h2>
+           <p>New Flat Listed</p>
+           <a href="#" class="text-blue-500 font-semibold">View all</a>
+       </div>
+       <div class="bg-orange-100 p-6 text-center rounded-md">
+           <h2 class="text-2xl font-semibold">2k+</h2>
+           <p>New Flat Listed</p>
+           <a href="#" class="text-blue-500 font-semibold">View all</a>
+       </div>
+   </section>
+
+   <!-- Properties Section -->
+   <section class="mt-8 max-w-6xl mx-auto">
+       <div class="flex justify-between items-center mb-4">
+           <h2 class="text-2xl font-semibold">Popular Properties</h2>
+           <a href="#" class="text-blue-500 font-semibold">See all properties</a>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+           <!-- Property Card 1 -->
+           <div class="bg-white p-4 rounded-lg shadow-md">
+               <a href="buyerSearch.html">
+                   <img src="assets/aa.jpg" alt="Property Image" class="w-full rounded-md mb-4"> <!-- Image path fixed -->
+               </a>
+               <div class="flex justify-between items-center mb-2">
+                   <span class="bg-blue-500 text-white px-2 py-1 rounded-md text-sm">Apartment</span>
+                   <span class="text-gray-500 text-sm">Ready to Move</span>
+               </div>
+               <h3 class="text-lg font-semibold">SunnySlope Suites</h3>
+               <p class="text-gray-500 text-sm">Meadowshire Park, Greenfield, USA</p>
+               <p class="mt-2 text-xl font-semibold">$250,000</p>
+           </div>
+
+           <!-- Property Card 2 -->
+           <div class="bg-white p-4 rounded-lg shadow-md">
+               <a href="buyerSearch.html">
+                   <img src="assets/02.jpg" alt="Property Image" class="w-full rounded-md mb-4"> <!-- Image path fixed -->
+               </a>
+               <div class="flex justify-between items-center mb-2">
+                   <span class="bg-blue-500 text-white px-2 py-1 rounded-md text-sm">Apartment</span>
+                   <span class="text-gray-500 text-sm">Ready to Move</span>
+               </div>
+               <h3 class="text-lg font-semibold">SunnySlope Suites</h3>
+               <p class="text-gray-500 text-sm">Meadowshire Park, Greenfield, USA</p>
+               <p class="mt-2 text-xl font-semibold">$250,000</p>
+           </div>
+
+           <!-- Property Card 3 -->
+           <div class="bg-white p-4 rounded-lg shadow-md">
+               <a href="buyerSearch.html">
+                   <img src="assets/aaa3.jpg" alt="Property Image" class="w-full rounded-md mb-4"> <!-- Image path fixed -->
+               </a>
+               <div class="flex justify-between items-center mb-2">
+                   <span class="bg-blue-500 text-white px-2 py-1 rounded-md text-sm">Apartment</span>
+                   <span class="text-gray-500 text-sm">Ready to Move</span>
+               </div>
+               <h3 class="text-lg font-semibold">SunnySlope Suites</h3>
+               <p class="text-gray-500 text-sm">Meadowshire Park, Greenfield, USA</p>
+               <p class="mt-2 text-xl font-semibold">$250,000</p>
+           </div>
+       </div>
+   </section>
+
+   <!-- New Listed Properties -->
+   <section class="mt-8 max-w-6xl mx-auto">
+       <div class="flex justify-between items-center mb-4">
+           <h2 class="text-2xl font-semibold">New Listed Properties</h2>
+           <a href="#" class="text-blue-500 font-semibold">See all properties</a>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+           <!-- Property Card 1 -->
+           <div class="bg-white p-4 rounded-lg shadow-md">
+               <img src="assets/b1.jpg" alt="Property Image" class="w-full rounded-md mb-4">
+               <div class="flex justify-between items-center mb-2">
+                   <span class="bg-blue-500 text-white px-2 py-1 rounded-md text-sm">Apartment</span>
+                   <span class="text-gray-500 text-sm">Ready to Move</span>
+               </div>
+               <h3 class="text-lg font-semibold">SunnySlope Suites</h3>
+               <p class="text-gray-500 text-sm">Meadowshire Park, Greenfield, USA</p>
+               <p class="mt-2 text-xl font-semibold">$250,000</p>
+           </div>
+
+           <!-- Property Card 2 -->
+           <div class="bg-white p-4 rounded-lg shadow-md">
+               <img src="assets/b2.jpg" alt="Property Image" class="w-full rounded-md mb-4">
+               <div class="flex justify-between items-center mb-2">
+                   <span class="bg-blue-500 text-white px-2 py-1 rounded-md text-sm">Apartment</span>
+                   <span class="text-gray-500 text-sm">Ready to Move</span>
+               </div>
+               <h3 class="text-lg font-semibold">SunnySlope Suites</h3>
+               <p class="text-gray-500 text-sm">Meadowshire Park, Greenfield, USA</p>
+               <p class="mt-2 text-xl font-semibold">$250,000</p>
+           </div>
+
+           <!-- Property Card 3 -->
+           <div class="bg-white p-4 rounded-lg shadow-md">
+               <img src="assets/b3.jpg" alt="Property Image" class="w-full rounded-md mb-4">
+               <div class="flex justify-between items-center mb-2">
+                   <span class="bg-blue-500 text-white px-2 py-1 rounded-md text-sm">Apartment</span>
+                   <span class="text-gray-500 text-sm">Ready to Move</span>
+               </div>
+               <h3 class="text-lg font-semibold">SunnySlope Suites</h3>
+               <p class="text-gray-500 text-sm">Meadowshire Park, Greenfield, USA</p>
+               <p class="mt-2 text-xl font-semibold">$250,000</p>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Testimonial Section -->
+<section class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold mb-8 text-center">Testimonials</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Testimonial Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-8 text-center">
+            <div class="mb-4 flex justify-center">
+                <!-- Star Ratings -->
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+                <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+            </div>
+            <p class="text-gray-600 mb-4">"This product changed my life! Highly recommend to everyone."</p>
+            <div class="flex items-center justify-center">
+                <img src="assets\KUJICAM_1684722572834_developed.png" alt="User Photo" class="w-12 h-12 rounded-full mr-3"> <!-- User Photo -->
+                <div>
+                    <h4 class="font-semibold text-lg">Rafiul Islam Shanto</h4>
+                    <p class="text-gray-500">CEO, Company Fedora</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonial Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-8 text-center">
+            <div class="mb-4 flex justify-center">
+                <!-- Star Ratings -->
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+                <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.27 1.205-5.982 5.366 1.41 8.235L12 18.897l-7.366 3.87 1.41-8.235-5.982-5.366 8.27-1.205z"/></svg>
+            </div>
+            <p class="text-gray-600 mb-4">"Excellent quality and service! Will definitely buy again."</p>
+            <div class="flex items-center justify-center">
+                <img src="assets\Untitled design (2).png" alt="User Photo" class="w-12 h-12 rounded-full mr-3"> <!-- User Photo -->
+                <div>
+                    <h4 class="font-semibold text-lg">Rafiul Islam</h4>
+                    <p class="text-gray-500">Software Engineer, Google Brain</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <!-- Footer Section -->
+<footer class="bg-sky-200 text-black mt-12 py-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+        <!-- Company Logo and Description -->
+        <div class="flex flex-col items-start md:col-span-1 mb-4">
+            <img src="assets\shanto.png" alt="Company Logo" class="w-32 h-auto mb-2" />
+            <p class="text-sm">Welcome to real state website.</p>
+          
+        </div>
+  
+        <!-- Product Column -->
+        <div class="md:col-span-1">
+            <h3 class="text-lg font-semibold mb-4">Product</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Overview</a></li>
+                <li><a href="#" class="hover:underline">Features</a></li>
+                <li><a href="#" class="hover:underline">Solutions</a></li>
+                <li><a href="#" class="hover:underline">Tutorials</a></li>
+                <li><a href="#" class="hover:underline">Pricing</a></li>
+                <li><a href="#" class="hover:underline">Releases</a></li>
+            </ul>
+        </div>
+  
+        <!-- Company Column -->
+        <div class="md:col-span-1">
+            <h3 class="text-lg font-semibold mb-4">Company</h3>
+            <ul class="space-y-2">
+                <li><a href="about.html" class="hover:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+                <li><a href="#" class="hover:underline">Press</a></li>
+                <li><a href="#" class="hover:underline">News</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+  
+        <!-- Resources Column -->
+        <div class="md:col-span-1">
+            <h3 class="text-lg font-semibold mb-4">Resources</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Newsletter</a></li>
+                <li><a href="#" class="hover:underline">Help center</a></li>
+                <li><a href="#" class="hover:underline">Tutorials</a></li>
+                <li><a href="#" class="hover:underline">Support</a></li>
+            </ul>
+        </div>
+  
+        <!-- Legal Column -->
+        <div class="md:col-span-1">
+            <h3 class="text-lg font-semibold mb-4">Legal</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Terms</a></li>
+                <li><a href="#" class="hover:underline">Privacy</a></li>
+                <li><a href="#" class="hover:underline">Cookies</a></li>
+                <li><a href="#" class="hover:underline">License</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+  
+   <!-- Bottom Footer Section -->
+  <div class="border-t border-blue-300 mt-8 pt-6">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <p class="text-sm">&copy; 2024 Heritage. Nest. All rights reserved.</p>
+        <div class="flex space-x-4">
+            <!-- Replace with your icon paths -->
+            <a href="#" class="hover:underline">
+                <img src="assets\instagram-brands-solid.svg" alt="Instagram" class="w-6 h-6" />
+            </a>
+            <a href="#" class="hover:underline">
+                <img src="assets/square-facebook-brands-solid.svg" alt="Facebook" class="w-6 h-6" />
+            </a>
+            <!-- Add more icons as needed -->
+            <a href="#" class="hover:underline">
+              <img src="assets/linkedin-brands-solid.svg" alt="Facebook" class="w-6 h-6" />
+          </a>
+        </div>
+    </div>
+  </div>
+  
+  <script src="scripts.js"></script>
+  
+  
+
+</body>
+
+</html>

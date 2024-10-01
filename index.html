@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage</title>
+  <!-- Link to external CSS file -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <style>
+    .hero-bg {
+      background-image: url('assets/home.jpg'); /* Adjust this path to your image */
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+    }
+  </style>
+
+  <!-- Header Section -->
+
+
+ <!-- Navbar -->
+<nav class="bg-white p-4 shadow-md flex justify-between items-center">
+  <div class="flex space-x-4">
+      <a href="#" class="text-lg">Buy</a>
+      <a href="upload_property.php" class="text-lg">Sell</a> <!-- Updated "Sell" button -->
+      <a href="about.html" class="text-lg">Services</a>
+  </div>
+  <div class="flex justify-center">
+      <a href="index.html">
+          <img src="assets/proty222.png" alt="Logo" class="h-12"> <!-- Logo size increased here -->
+      </a>
+  </div>
+  <div>
+      <a href="#" class="text-lg">Manage Rentals</a>
+      <a href="#" class="ml-4 text-lg">Sign In</a>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white flex justify-center items-center">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Your Portal to India's Exquisite Real Estate</h1>
+      <p class="mb-6">Seamlessly connecting you to the heart of India's prime properties.</p>
+      <a href="buyerPage.html"> <!-- Link to buyerPage.html -->
+        <button id="findPropertyButton" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full">Find Property</button>
+      </a>
+    </div>
+  </section>
+
+ <!-- Property Buying Section 01 -->
+ <section class="py-12 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <img src="assets\h01.jpg" alt="Property" class="rounded-md">
+      </div>
+      <div>
+        <h3 class="text-custom-orange font-semibold mb-2">-Property Buying</h3>
+        <h2 class="text-3xl font-bold mb-4">Efficient and Transparent Home Buying Solutions</h2>
+        <p class="text-gray-600 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <a href="buyerPage.html"> <!-- Link to buyerPage.html -->
+          <button id="findPropertyButton2" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full">Find Property</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <!-- Property Buying Section 02-->
+   <section class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Text Section - Left Side -->
+        <div>
+          <h3 class="text-custom-orange font-semibold mb-2">-Property Buying</h3>
+          <h2 class="text-3xl font-bold mb-4">Efficient and Transparent Home Buying Solutions</h2>
+          <p class="text-gray-600 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+          <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full">Find Property</button>
+        </div>
+        <!-- Image Section - Right Side -->
+        <div>
+          <img src="assets\h02.jpg" alt="Property" class="rounded-md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+   <!-- Property Buying Section 03 -->
+   <section class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <img src="assets\h03.jpg" alt="Property" class="rounded-md">
+        </div>
+        <div>
+          <h3 class="text-custom-orange font-semibold mb-2">-Property Buying</h3>
+          <h2 class="text-3xl font-bold mb-4">Efficient and Transparent Home Buying Solutions</h2>
+          <p class="text-gray-600 mb-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+          <a href="buyerPage.html"> <!-- Link to buyerPage.html -->
+            <button id="findPropertyButton2" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full">Find Property</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More sections ... -->
+
+  <!-- Services Section -->
+  <section class="py-12 bg-gray-100 text-center">
+    <h1 class="text-2xl font-bold mb-8">Other Services</h1>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 bg-white shadow-md rounded-md">
+        <img src="assets\house-solid.svg" alt="Advanced Property Search" class="mx-auto mb-4 w-12">
+        <h3 class="text-lg font-bold">Advanced Property Search</h3>
+        <p class="text-gray-600">Effortlessly find your dream property with advanced search filters.</p>
+      </div>
+      <div class="p-6 bg-white shadow-md rounded-md">
+        <img src="assets\house-solid.svg" alt="Virtual Tours and Multimedia" class="mx-auto mb-4 w-12">
+        <h3 class="text-lg font-bold">Virtual Tours and Multimedia</h3>
+        <p class="text-gray-600">Explore properties through immersive virtual tours and HD photos.</p>
+      </div>
+      <div class="p-6 bg-white shadow-md rounded-md">
+        <img src="assets\tent-arrow-left-right-solid.svg" alt="Secure Online Transactions" class="mx-auto mb-4 w-12">
+        <h3 class="text-lg font-bold">Secure Online Transactions</h3>
+        <p class="text-gray-600">Ensure secure transactions and e-sign documents seamlessly online.</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer Section -->
+<footer class="bg-sky-200 text-black mt-12 py-8">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <!-- Company Logo and Description -->
+      <div class="flex flex-col items-start md:col-span-1 mb-4">
+          <img src="assets\shanto.png" alt="Company Logo" class="w-32 h-auto mb-2" />
+          <p class="text-sm">Welcome to real state website.</p>
+        
+      </div>
+
+      <!-- Product Column -->
+      <div class="md:col-span-1">
+          <h3 class="text-lg font-semibold mb-4">Product</h3>
+          <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Overview</a></li>
+              <li><a href="#" class="hover:underline">Features</a></li>
+              <li><a href="#" class="hover:underline">Solutions</a></li>
+              <li><a href="#" class="hover:underline">Tutorials</a></li>
+              <li><a href="#" class="hover:underline">Pricing</a></li>
+              <li><a href="#" class="hover:underline">Releases</a></li>
+          </ul>
+      </div>
+
+      <!-- Company Column -->
+      <div class="md:col-span-1">
+          <h3 class="text-lg font-semibold mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="hover:underline">About Us</a></li>
+
+              <li><a href="#" class="hover:underline">Careers</a></li>
+              <li><a href="#" class="hover:underline">Press</a></li>
+              <li><a href="#" class="hover:underline">News</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+      </div>
+
+      <!-- Resources Column -->
+      <div class="md:col-span-1">
+          <h3 class="text-lg font-semibold mb-4">Resources</h3>
+          <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Blog</a></li>
+              <li><a href="#" class="hover:underline">Newsletter</a></li>
+              <li><a href="#" class="hover:underline">Help center</a></li>
+              <li><a href="#" class="hover:underline">Tutorials</a></li>
+              <li><a href="#" class="hover:underline">Support</a></li>
+          </ul>
+      </div>
+
+      <!-- Legal Column -->
+      <div class="md:col-span-1">
+          <h3 class="text-lg font-semibold mb-4">Legal</h3>
+          <ul class="space-y-2">
+              <li><a href="#" class="hover:underline">Terms</a></li>
+              <li><a href="#" class="hover:underline">Privacy</a></li>
+              <li><a href="#" class="hover:underline">Cookies</a></li>
+              <li><a href="#" class="hover:underline">License</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+
+ <!-- Bottom Footer Section -->
+<div class="border-t border-blue-300 mt-8 pt-6">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <p class="text-sm">&copy; 2024 Heritage. Nest. All rights reserved.</p>
+      <div class="flex space-x-4">
+          <!-- Replace with your icon paths -->
+          <a href="#" class="hover:underline">
+              <img src="assets\instagram-brands-solid.svg" alt="Instagram" class="w-6 h-6" />
+          </a>
+          <a href="#" class="hover:underline">
+              <img src="assets/square-facebook-brands-solid.svg" alt="Facebook" class="w-6 h-6" />
+          </a>
+          <!-- Add more icons as needed -->
+          <a href="#" class="hover:underline">
+            <img src="assets/linkedin-brands-solid.svg" alt="Facebook" class="w-6 h-6" />
+        </a>
+      </div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+
+
+
+</body>
+</html>

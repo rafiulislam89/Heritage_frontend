@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMg2I5j3c9gZdeR8Y/Y7Z+Q8D6G5C59O2Q8Q7K" crossorigin="anonymous">
+</head>
+
+<body class="bg-gray-100">
+
+
+    <!-- Header Section -->
+<!-- Navbar -->
+<nav class="bg-white p-4 shadow-md flex justify-between items-center">
+    <div class="flex space-x-4">
+        <a href="#" class="text-lg">Buy</a>
+        <a href="upload_property.php" class="text-lg">Sell</a> <!-- Updated "Sell" button -->
+        <a href="about.html" class="text-lg">Services</a>
+    </div>
+    <div class="flex justify-center">
+        <a href="index.html">
+            <img src="assets/proty222.png" alt="Logo" class="h-12"> <!-- Logo size increased here -->
+        </a>
+    </div>
+    <div>
+        <a href="#" class="text-lg">Manage Rentals</a>
+        <a href="#" class="ml-4 text-lg">Sign In</a>
+    </div>
+  </nav>
+  
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg my-6">
+
+        <!-- Header Section -->
+        <div class="flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-semibold text-gray-800">3 BHK Builder Floor for Sale in Site Ram Bazar Hyderabad</h1>
+                <p class="text-sm text-gray-600">Meadowshire Park, Greenfield, USA</p>
+            </div>
+            <div class="text-3xl font-bold text-gray-800">
+                $300K
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="grid grid-cols-3 gap-4 my-4">
+            <div class="col-span-2">
+                <img class="w-full h-96 object-cover rounded-lg" src="assets\h03.jpg" alt="Main Property Image">
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+                <img class="h-32 object-cover rounded-lg" src="image_1.jpg" alt="Image 1">
+                <img class="h-32 object-cover rounded-lg" src="image_2.jpg" alt="Image 2">
+                <img class="h-32 object-cover rounded-lg" src="image_3.jpg" alt="Image 3">
+                <img class="h-32 object-cover rounded-lg" src="image_4.jpg" alt="Image 4">
+            </div>
+            <a href="#" class="col-span-1 flex items-center justify-center bg-gray-200 rounded-lg h-32">
+                <span class="text-center">View More</span>
+            </a>
+        </div>
+
+        <!-- Property Value Section -->
+        <div class="grid grid-cols-2 gap-4 my-6">
+            <div class="bg-blue-100 p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-gray-800">Property Value</h2>
+                <p class="text-sm text-gray-500">Your bid cannot be more than 10% of the property minimum value.</p>
+                <div class="flex mt-2">
+                    <div class="mr-2">
+                        <label for="min" class="block text-sm">Min</label>
+                        <input type="number" id="min" class="w-full p-2 border rounded-lg" value="280000">
+                    </div>
+                    <div>
+                        <label for="max" class="block text-sm">Max</label>
+                        <input type="number" id="max" class="w-full p-2 border rounded-lg" value="305000">
+                    </div>
+                </div>
+                <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg">Bid Property</button>
+            </div>
+            <div>
+                <!-- Embed Google Map -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509263!2d144.95373631531927!3d-37.81720997975139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f09d71f%3A0x5045675218cee10!2sMelbourne%20Central!5e0!3m2!1sen!2sau!4v1614097850287!5m2!1sen!2sau"
+                    width="100%" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <!-- Overview Section -->
+        <div class="my-6">
+            <h2 class="text-xl font-semibold text-gray-800">Overview</h2>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-bed text-gray-600"></i>
+                    <span>2 Beds</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-bath text-gray-600"></i>
+                    <span>2 Bath</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-balance-scale text-gray-600"></i>
+                    <span>2 Balcony</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-couch text-gray-600"></i>
+                    <span>Fully Furnished</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-4">
+                <div>
+                    <p>Carpet Area: <span class="font-semibold">2000 sqft</span></p>
+                    <p>Facing: <span class="font-semibold">North-East</span></p>
+                </div>
+                <div>
+                    <p>Floor: <span class="font-semibold">Second (Out of 6 floors)</span></p>
+                    <p>Additional Rooms: <span class="font-semibold">1 Servant room, 1 Guest room</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Amenities Section -->
+        <div class="my-6">
+            <h2 class="text-xl font-semibold text-gray-800">Amenities</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-battery-full text-gray-600"></i>
+                    <span>Power Back Up</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-elevator text-gray-600"></i>
+                    <span>Lift</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-dumbbell text-gray-600"></i>
+                    <span>Gymnasium</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-users text-gray-600"></i>
+                    <span>Club House</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-water text-gray-600"></i>
+                    <span>Water Storage</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-parking text-gray-600"></i>
+                    <span>Reserved Parking</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-gray-600"></i>
+                    <span>Security</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-basketball-ball text-gray-600"></i>
+                    <span>Outdoor Tennis Courts</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-gas-pump text-gray-600"></i>
+                    <span>Piped Gas</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-recycle text-gray-600"></i>
+                    <span>Waste Disposal</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-laundry-basket text-gray-600"></i>
+                    <span>Laundry Service</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-graduation-cap text-gray-600"></i>
+                    <span>Early Learning Centre</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-running text-gray-600"></i>
+                    <span>Jogging & Strolling Track</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-child text-gray-600"></i>
+                    <span>Kids Play Area</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+     <!-- Services Section -->
+  <section class="py-12 bg-gray-100 text-center">
+    <h1 class="text-2xl font-bold mb-8">Other Services</h1>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 bg-white shadow-md rounded-md">
+        <img src="assets\house-solid.svg" alt="Advanced Property Search" class="mx-auto mb-4 w-12">
+        <h3 class="text-lg font-bold">Advanced Property Search</h3>
+        <p class="text-gray-600">Effortlessly find your dream property with advanced search filters.</p>
+      </div>
+      <div class="p-6 bg-white shadow-md rounded-md">
+        <img src="assets\house-solid.svg" alt="Virtual Tours and Multimedia" class="mx-auto mb-4 w-12">
+        <h3 class="text-lg font-bold">Virtual Tours and Multimedia</h3>
+        <p class="text-gray-600">Explore properties through immersive virtual tours and HD photos.</p>
+      </div>
+      <div class="p-6 bg-white shadow-md rounded-md">
+        <img src="assets\tent-arrow-left-right-solid.svg" alt="Secure Online Transactions" class="mx-auto mb-4 w-12">
+        <h3 class="text-lg font-bold">Secure Online Transactions</h3>
+        <p class="text-gray-600">Ensure secure transactions and e-sign documents seamlessly online.</p>
+      </div>
+    </div>
+  </section>
+
+
+     <!-- Footer Section -->
+ <footer class="bg-sky-200 text-black mt-12 py-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+        <!-- Company Logo and Description -->
+        <div class="flex flex-col items-start md:col-span-1 mb-4">
+            <img src="assets\shanto.png" alt="Company Logo" class="w-32 h-auto mb-2" />
+            <p class="text-sm">Welcome to real state website.</p>
+          
+        </div>
+  
+        <!-- Product Column -->
+        <div class="md:col-span-1">
+            <h3 class="text-lg font-semibold mb-4">Product</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Overview</a></li>
+                <li><a href="#" class="hover:underline">Features</a></li>
+                <li><a href="#" class="hover:underline">Solutions</a></li>
+                <li><a href="#" class="hover:underline">Tutorials</a></li>
+                <li><a href="#" class="hover:underline">Pricing</a></li>
+                <li><a href="#" class="hover:underline">Releases</a></li>
+            </ul>
+        </div>
+  
+        <!-- Company Column -->
+        <div class="md:col-span-1">
+            <h3 class="text-lg font-semibold mb-4">Company</h3>
+            <ul class="space-y-2">
+                <li><a href="about.html" class="hover:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+                <li><a href="#" class="hover:underline">Press</a></li>
+                <li><a href="#" class="hover:underline">News</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+  
+        <!-- Resources Column -->
+        <div class="md:col-span-1">
+            <h3 class="text-lg font-semibold mb-4">Resources</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Blog</a></li>
+                <li><a href="#" class="hover:underline">Newsletter</a></li>
+                <li><a href="#" class="hover:underline">Help center</a></li>
+                <li><a href="#" class="hover:underline">Tutorials</a></li>
+                <li><a href="#" class="hover:underline">Support</a></li>
+            </ul>
+        </div>
+  
+        <!-- Legal Column -->
+        <div class="md:col-span-1">
+            <h3 class="text-lg font-semibold mb-4">Legal</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Terms</a></li>
+                <li><a href="#" class="hover:underline">Privacy</a></li>
+                <li><a href="#" class="hover:underline">Cookies</a></li>
+                <li><a href="#" class="hover:underline">License</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+  
+   <!-- Bottom Footer Section -->
+  <div class="border-t border-blue-300 mt-8 pt-6">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <p class="text-sm">&copy; 2024 Heritage. Nest. All rights reserved.</p>
+        <div class="flex space-x-4">
+            <!-- Replace with your icon paths -->
+            <a href="#" class="hover:underline">
+                <img src="assets\instagram-brands-solid.svg" alt="Instagram" class="w-6 h-6" />
+            </a>
+            <a href="#" class="hover:underline">
+                <img src="assets/square-facebook-brands-solid.svg" alt="Facebook" class="w-6 h-6" />
+            </a>
+            <!-- Add more icons as needed -->
+            <a href="#" class="hover:underline">
+              <img src="assets/linkedin-brands-solid.svg" alt="Facebook" class="w-6 h-6" />
+          </a>
+        </div>
+    </div>
+  </div>
+  
+  <script src="scripts.js"></script>
+  
+
+</body>
+
+</html>
