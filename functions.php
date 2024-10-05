@@ -1,28 +1,25 @@
 <?php
-// functions.php
 
-// Example function to process a contact form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Simulate data processing (e.g., saving to a database)
+   
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
-    // In a real application, you would save this data to a database or send an email
-    // For this example, we're just echoing it back
+    
     echo "Thank you, $name! Your message has been received.";
 }
 ?>
 
 
 <?php
-// Database connection
+
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "property_db";
+$dbname = "real_estate";
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
@@ -37,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $property_type = $_POST['property_type'];
     $budget = $_POST['budget'];
 
-    // Query the database for matching properties
+   
     $sql = "SELECT * FROM properties WHERE location LIKE '%$location%' AND property_type='$property_type' AND budget <= '$budget'";
     $result = $conn->query($sql);
 
