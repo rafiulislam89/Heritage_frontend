@@ -1,6 +1,4 @@
-// script.js
 
-// Function to handle the responsive navigation toggl
 
 document.addEventListener("DOMContentLoaded", function() {
     const toggleButton = document.getElementById("nav-toggle");
@@ -12,15 +10,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Define the action for findPropertyButton
+
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the Find Property button
+    
     const findPropertyButton = document.getElementById('findPropertyButton');
     const findPropertyButton2 = document.getElementById('findPropertyButton2');
 
-    // Define the click event action
+   
     function handleFindPropertyClick() {
-        // You can customize the action here, such as redirecting to a property listing page
+       
         alert('Redirecting to property search page...');
         window.location.href = 'property-listing.html'; // Redirects to a new page (adjust URL as needed)
     }
@@ -36,12 +34,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-  // Get the first "Find Property" button in the Hero Section
+
   document.getElementById('findPropertyButton').addEventListener('click', function() {
     window.location.href = 'buyerPage.html'; // Redirect to the buyer page
   });
   
-  // Get the second "Find Property" button in the property buying section
+  /
   document.getElementById('findPropertyButton2').addEventListener('click', function() {
     window.location.href = 'buyerPage.html'; // Redirect to the buyer page
   });
@@ -83,4 +81,4 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchProperties(); // Fetch properties when the page loads
 });
 
-// Existing code...
+
